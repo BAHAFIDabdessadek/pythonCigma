@@ -1,0 +1,37 @@
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alternatives</title>
+</head>
+<body>
+<h1>Langage des templates : Alternatives</h1>
+<hr>
+<h2>Matricule : {{etudiant.matricule}}</h2>
+<h2>Nom & Prenom : {{etudiant.nom_complet}}</h2>
+
+{% if etudiant.genre == "M" %}
+<h2>Genre : Masculin</h2>
+{% else %}
+<h2>Genre : Feminin</h2>
+{% endif %}
+
+
+{% if etudiant.note >= 16 %}
+<h2>Mention : Tres Bien</h2>
+{% elif etudiant.note >= 14 %}
+<h2>Mention :  Bien</h2>
+{% elif etudiant.note >= 12 %}
+<h2>Mention : Assez Bien</h2>
+{% elif etudiant.note >= 10 %}
+<h2>Mention : Passable</h2>
+{% else %}
+<h2>Mention : Non Admis</h2>
+{% endif %}
+
+
+
+<h2>Note : {{etudiant.note}}</h2>
+</body>
+</html>

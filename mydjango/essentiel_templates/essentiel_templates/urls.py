@@ -23,4 +23,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index, name="index"),
     path("use_static/", views.view_static, name="view_static"),
+    path("variables/", views.view_variables, name="view_variables"),
+    path("attribut/", views.view_attributs, name="view_attributs"),
+    path("alternative/", views.view_alternative, name="view_alternative"),
+    path("boucle/", views.view_bocle, name="view_boucle"),
 ]
