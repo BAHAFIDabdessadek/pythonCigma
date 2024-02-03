@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>form: affichage</title>
+</head>
+<body>
+<table border=" 1">
+    <tr>
+        <th> Affichage par default </th>
+        <th>**********</th>
+        <th>Affichage as_p</th>
+        <th>**********</th>
+        <th>Affichage as_ul</th>
+        <th>**********</th>
+        <th>Affichage as_tabl </th>
+    </tr>
+    <tr>
+    <td>
+        <form action="" method="post" >
+            {{form}}
+            <p> <input type="submit" value="Submit"/> </p>
+        </form>
+    </td>
+    <td>**********</td›
+    <td>
+        <form action="" method="post">
+            {{form.as_p}}
+                <p> <input type="submit" value="Submit"/> </p>
+            </form>
+    </td>
+        <td>**********</td>
+    <td>
+        <form action="" method="post">
+            {{form.as_ul}}
+            <p> <input type="submit" value=" Submit" /> </p>
+         </form>
+    </td>
+    <td>**********</td> <td>
+        <form action="" method="post">
+            <table>
+            {{form.as_table}}
+                <р> <input type="submit" value="Submit" /> </р>
+            </table>
+        </form>
+    </td>
+    </tr>
+</table>
+</body>
+</html>

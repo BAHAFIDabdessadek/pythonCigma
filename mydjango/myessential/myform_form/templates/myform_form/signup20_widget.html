@@ -1,0 +1,14 @@
+<!DOCTYPE h t m l >
+<html lang="en" > <head>
+    <meta charset="UTF-8" >
+    <title>Utilisation de l'attribut widget</title>
+</head>
+<body>
+    <form action="" method="POST">
+    {% csrf_token %}
+        <table>
+        {{form.as_table}}
+        </table>
+</form>
+</body>
+</html>
